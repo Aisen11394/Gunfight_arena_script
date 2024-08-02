@@ -56,7 +56,6 @@ end)
 local textbs = serv:Channel("Textboxes")
 
 textbs:Textbox("Walkspeed", "Type here!", true, function(value)
-game:GetService("RunService").RenderStepped:wait()
 while task.wait() do
     game.Players.LocalPlayer.Character:FindFirstChildWhichIsA("Humanoid").WalkSpeed = value
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value

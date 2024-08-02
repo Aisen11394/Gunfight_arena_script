@@ -59,7 +59,7 @@ textbs:Textbox("Walkspeed", "Type here!", true, function(value)
 while task.wait() do
     game.Players.LocalPlayer.Character:FindFirstChildWhichIsA("Humanoid").WalkSpeed = value
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
-end
+end)
 
 local lbls = serv:Channel("Labels")
 
